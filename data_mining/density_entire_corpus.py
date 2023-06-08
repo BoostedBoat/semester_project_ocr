@@ -1,11 +1,23 @@
+# python density_entire_corpus.py in_folder topic_words
+
 import density
 import os
 import sys
 import pandas as pd
+import csv
 
 in_folder = sys.argv[1]
+#csv, one word per row
+topic_words_csv = sys.argv[2]
 
-topic_words = ['freud', 'inconscient', 'rêve', 'ernest jones', 'analytique', 'divan']
+import csv
+
+topic_words = []
+
+with open(topic_words_csv, 'r') as file:
+  csvreader = csv.reader(file)
+  for row in csvreader:
+    topic_words.append(row)
 
 main_dir = os.listdir(in_folder)
 

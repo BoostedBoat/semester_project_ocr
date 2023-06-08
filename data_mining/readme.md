@@ -12,7 +12,7 @@ python density_entire_corpus.py in_folder topic_words
 ```
 where:
 - in_folder is the path to a folder where the "pages_treated_txts" folder, or a similar folder.
-- topic_words is the path to a txt containing words related to the topic we want to find related articles for.
+- topic_words is the path to a csv containing words (one per row!) related to the topic we want to find related articles for.
 Pay attention: this tool is not perfect, it finds the number of topic words in different pages and outputs the ones in which the density is the highest, but the density measure is arbitrary, which means that the outputted pages can differ depending on the given topic words. For it to work, there should be enough specific topic words, and too generic topic words should be avoided.
 
 ## lda.py
