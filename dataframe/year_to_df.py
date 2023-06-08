@@ -4,10 +4,7 @@
 import sys
 import os
 import pandas as pd
-
-
-def add_entry(df, year, month, text):
-    df.at[(year-1970)*12 + month-1,'text'] = text
+import df_helpers
 
 in_csv = sys.argv[1]
 in_folder = sys.argv[2]
@@ -15,21 +12,7 @@ year = int(sys.argv[3])
 
 df = pd.read_csv(in_csv, index_col=0)
 
-dir = os.listdir(in_folder)
-
-month = 1
-for t in dir:
-    print(t)
-    in_file = in_folder + "/" + t
-
-    print(in_file)
-    text = None
-    with open(in_file) as file:
-        text = file.readlines()
-
-    if len(text) != 0:
-        add_entry(df, year, month, text[0])
-    month += 1
+df = df_helpers.add_one_year(df, year, in_folder)
 
 df.to_csv(in_csv)
 

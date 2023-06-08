@@ -8,7 +8,6 @@ import numpy as np
 import PyPDF2
 import os
 import io
-import img2pdf
 from PIL import Image
 
 def resize(path):

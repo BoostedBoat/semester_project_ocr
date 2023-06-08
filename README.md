@@ -17,7 +17,6 @@ MICE is a project studying the reception of behavior therapy in the Francophone 
 - numpy (https://numpy.org/)
 - opencv (https://opencv.org/)
 - pandas (https://pandas.pydata.org/)
-- pdf2image (https://pypi.org/project/pdf2image/)
 - pillow (https://pypi.org/project/Pillow/)
 - pprint (https://docs.python.org/3/library/pprint.html)
 - pyLDAvis (https://pypi.org/project/pyLDAvis/)
