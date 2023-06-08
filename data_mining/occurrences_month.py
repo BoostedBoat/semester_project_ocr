@@ -70,10 +70,11 @@ higher_than_dev = np.argwhere(occ > (deviation*mean_occ))
 for i in higher_than_dev:
     colors[i[0]] = "red"
 
+print(occ)
 
 plt.title("Occurrences of " + word)
 plt.xlabel("Months")
 plt.ylabel("Occurrences")
 plt.bar(np.arange(len(occ)), occ, 0.7, color=colors)
-plt.xticks(np.arange(0, len(occ), 12), np.arange(1970, 1985))
+plt.xticks(np.arange(0, len(occ), 12), np.arange(1970, 1970 + len(occ)))
 plt.show()

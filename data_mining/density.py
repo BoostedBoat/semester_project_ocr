@@ -1,5 +1,4 @@
 import pandas as pd
-import sys
 
 '''in_issue = sys.argv[1]
 

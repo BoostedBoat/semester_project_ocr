@@ -80,12 +80,13 @@ where:
 - [top_k] is the number of returned neighbors (default is 10)
 
 ## ner.py
-This script is a first try at performing Named Entity Recognition on the corpus. It works but is very basic and needs tuning to be correctly exploitable.
+This script is a first try at performing Named Entity Recognition on one magazine's issue. It works but is very basic and needs tuning to be correctly exploitable.
 ```
-python ner.py in_csv
+python ner.py in_csv month
 ```
 where:
-- in_csv is a csv containing a "text" column for which the ner will be performed (e.g. df_treated.csv, for the whole corpus7
+- in_csv is a csv containing a "text" column for which the ner will be performed (e.g. df_treated.csv, for the whole corpus
+- month is the magazine's issue where the NER has to be performed, starting at 0 for January 1970, 1 for February 1970... 12 for January 1971...
 Pay attention: The script prints its output, but only store it partially, more work is needed for a complete store allowing for a clean load
 
 ## occurrences_month.py

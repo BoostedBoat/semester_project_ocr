@@ -17,7 +17,7 @@ topic_words = []
 with open(topic_words_csv, 'r') as file:
   csvreader = csv.reader(file)
   for row in csvreader:
-    topic_words.append(row)
+    topic_words.append(row[0])
 
 main_dir = os.listdir(in_folder)
 

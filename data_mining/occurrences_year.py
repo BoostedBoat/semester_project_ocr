@@ -63,7 +63,7 @@ for i in range (len(df.index)):
         if compute_distance(w, word) <= distance:
             counter += 1
 
-    occ[int(i/12)] = counter
+    occ[int(i/12)] += counter
 
 
 colors = ["c"] * int(len(occ))
@@ -74,10 +74,11 @@ higher_than_dev = np.argmax(occ)
 
 colors[higher_than_dev] = "red"
 
+print(occ)
 
 plt.title("Occurrences of " + word)
 plt.xlabel("Years")
 plt.ylabel("Occurrences")
 plt.bar(np.arange(len(occ)), occ, 0.7, color=colors)
-plt.xticks(np.arange(len(occ)), np.arange(1970, 1985))
+plt.xticks(np.arange(len(occ)), np.arange(1970, 1970 + len(occ)))
 plt.show()

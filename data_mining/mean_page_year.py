@@ -50,6 +50,7 @@ for i, node_dir in enumerate(main_dir):
     acc = 0
     occ = 0
     for issue in month_file:
+        print(issue)
         #manage missing issues
         empty = False
         try:
@@ -66,6 +67,7 @@ for i, node_dir in enumerate(main_dir):
                     if compute_distance(w, word) <= distance:
                         occ += 1
                         acc += j + 1
+                        print("found " + str(j))
                         break
     
     if occ == 0:
