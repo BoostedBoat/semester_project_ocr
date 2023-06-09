@@ -6,8 +6,11 @@ MICE is a project studying the reception of behavior therapy in the Francophone 
 
 ## Architecture
 
+- data: This folder contains the data on which the different scripts can be executed
 - data_mining: This folder contains useful python scripts for the analysis of the magazines
+- dataframe: This folder contains scripts to generate and initialize the dataframes in which the data can be stored
 - ocr: This folder contains python scripts used for the Optical Character Recognition of the magazines
+- report: This folder contains the PDF version of the project's report, along with its Latex source code
 - txt_management: This folder contains useful python scripts to treat the txts obtained through the OCR
 
 ## Libraries and dependences
@@ -23,3 +26,4 @@ MICE is a project studying the reception of behavior therapy in the Francophone 
 - pypdf2 (https://pypi.org/project/PyPDF2/)
 - tesseract (https://github.com/tesseract-ocr/tesseract)
 - textblob (https://pypi.org/project/textblob/)
+- spacy (https://spacy.io/)
