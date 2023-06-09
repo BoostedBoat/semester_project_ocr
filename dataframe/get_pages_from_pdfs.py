@@ -1,3 +1,5 @@
+# python get_pages_from_pdfs.py in_folder out_folder_raw out_folder_treated
+
 from PyPDF2 import PdfReader
 import pandas as pd
 import numpy as np

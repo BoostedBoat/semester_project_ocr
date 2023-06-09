@@ -1,8 +1,7 @@
-#python year_to_df.py in_csv, in_folder, year
+#python year_to_df.py in_csv in_folder year
 #MAKE SURE ALL TXT FILES ARE IN CHRONOLOGICAL ORDER, AND THAT NO MONTH IS MISSING
 
 import sys
-import os
 import pandas as pd
 import df_helpers
 
